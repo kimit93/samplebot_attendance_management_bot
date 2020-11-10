@@ -66,6 +66,8 @@ def generate_token():
     tmp_token = create_tmp_token(PRIVATE_KEY_PATH, HEROKU_SERVER_ID)
     if tmp_token is None:
         raise Exception("generate tmp token failed.")
+    else:
+        raise Exception(PRIVATE_KEY_PATH)        
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "charset": "UTF-8"
